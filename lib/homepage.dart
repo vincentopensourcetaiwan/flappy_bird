@@ -9,12 +9,18 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  double birdYaxis = -1;
+  double birdYaxis = 0;
+  double time = 0;
+  double height = 0;
+  double initialHeight = 0;
 
   void jump() {
-    Timer.periodic(Duration(milliseconds: 500), (timer) {
+    initialHeight = birdYaxis;
+    Timer.periodic(Duration(milliseconds: 50), (timer) {
+      time += 0.04;
+      height = -4.9 * time * time + 2.8 * time;
       setState(() {
-        birdYaxis += 0.1;
+        birdYaxis = initialHeight - height;
       });
     });
   }

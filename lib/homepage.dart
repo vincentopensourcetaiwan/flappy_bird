@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
                 alignment: Alignment(0, 0),
                 duration: Duration(milliseconds: 0),
                 color: Colors.blue,
-                child: Center(child: MyBird()),
+                child: MyBird(),
               )),
           Expanded(
               child: Container(

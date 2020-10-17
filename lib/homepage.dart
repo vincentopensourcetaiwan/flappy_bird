@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flappy_bird/bird.dart';
 import 'package:flutter/material.dart';
 
@@ -7,11 +9,13 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  double birdYaxis = 0;
+  double birdYaxis = -1;
 
   void jump() {
-    setState(() {
-      birdYaxis = birdYaxis - 0.1;
+    Timer.periodic(Duration(milliseconds: 500), (timer) {
+      setState(() {
+        birdYaxis += 0.1;
+      });
     });
   }
 

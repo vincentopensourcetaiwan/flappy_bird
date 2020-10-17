@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
               flex: 2,
               child: Container(
                 color: Colors.blue,
-                child: MyBird(),
+                child: Center(child: MyBird()),
               )),
           Expanded(
               child: Container(

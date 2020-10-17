@@ -1,3 +1,4 @@
+import 'package:flappy_bird/bird.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -15,6 +16,7 @@ class _HomePageState extends State<HomePage> {
               flex: 2,
               child: Container(
                 color: Colors.blue,
+                child: MyBird(),
               )),
           Expanded(
               child: Container(

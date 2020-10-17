@@ -22,6 +22,9 @@ class _HomePageState extends State<HomePage> {
       setState(() {
         birdYaxis = initialHeight - height;
       });
+      if (birdYaxis > 0) {
+        timer.cancel();
+      }
     });
   }
 

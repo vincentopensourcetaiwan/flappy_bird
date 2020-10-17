@@ -12,9 +12,10 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         children: [
           Expanded(
+              flex: 2,
               child: Container(
-            color: Colors.blue,
-          )),
+                color: Colors.blue,
+              )),
           Expanded(
               child: Container(
             color: Colors.green,

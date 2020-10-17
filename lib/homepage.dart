@@ -59,6 +59,10 @@ class _HomePageState extends State<HomePage> {
                   child: MyBird(),
                 ),
               )),
+          Container(
+            height: 15,
+            color: Colors.green,
+          ),
           Expanded(
               child: Container(
             color: Colors.brown,

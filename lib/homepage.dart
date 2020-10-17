@@ -7,6 +7,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  double birdYaxis = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +17,7 @@ class _HomePageState extends State<HomePage> {
           Expanded(
               flex: 2,
               child: AnimatedContainer(
-                alignment: Alignment(1, 0),
+                alignment: Alignment(0, birdYaxis),
                 duration: Duration(milliseconds: 0),
                 color: Colors.blue,
                 child: MyBird(),

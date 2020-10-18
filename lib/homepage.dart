@@ -91,28 +91,28 @@ class _HomePageState extends State<HomePage> {
                       alignment: Alignment(barrierXone, 1.1),
                       duration: Duration(milliseconds: 0),
                       child: MyBarrier(
-                        size: 120.0,
+                        size: 110.0,
                       ),
                     ),
                     AnimatedContainer(
                       alignment: Alignment(barrierXone, -1.1),
                       duration: Duration(milliseconds: 0),
                       child: MyBarrier(
-                        size: 120.0,
+                        size: 110.0,
                       ),
                     ),
                     AnimatedContainer(
                       alignment: Alignment(barrierXtwo, 1.1),
                       duration: Duration(milliseconds: 0),
                       child: MyBarrier(
-                        size: 70.0,
+                        size: 100.0,
                       ),
                     ),
                     AnimatedContainer(
                       alignment: Alignment(barrierXtwo, -1.1),
                       duration: Duration(milliseconds: 0),
                       child: MyBarrier(
-                        size: 180.0,
+                        size: 150.0,
                       ),
                     )
                   ],

@@ -15,8 +15,8 @@ class _HomePageState extends State<HomePage> {
   double height = 0;
   double initialHeight = birdYaxis;
   bool gameHasStarted = false;
-  double barrierXone = 0;
-  double barrierXtwo = 1;
+  static double barrierXone = 1;
+  double barrierXtwo = barrierXone * 5;
 
   void jump() {
     setState(() {
@@ -31,9 +31,9 @@ class _HomePageState extends State<HomePage> {
       time += 0.04;
       height = -4.9 * time * time + 2.8 * time;
       setState(() {
+        birdYaxis = initialHeight - height;
         barrierXone -= 0.01;
         barrierXtwo -= 0.01;
-        birdYaxis = initialHeight - height;
       });
       if (birdYaxis > 1) {
         timer.cancel();

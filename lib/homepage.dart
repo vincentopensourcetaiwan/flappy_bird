@@ -15,6 +15,8 @@ class _HomePageState extends State<HomePage> {
   double height = 0;
   double initialHeight = birdYaxis;
   bool gameHasStarted = false;
+  double barrierXone = 0;
+  double barrierXtwo = 1;
 
   void jump() {
     setState(() {
@@ -72,31 +74,31 @@ class _HomePageState extends State<HomePage> {
                           ),
                   ),
                   AnimatedContainer(
-                    alignment: Alignment(0, 1.1),
+                    alignment: Alignment(barrierXone, 1.1),
                     duration: Duration(milliseconds: 0),
                     child: MyBarrier(
                       size: 120.0,
                     ),
                   ),
                   AnimatedContainer(
-                    alignment: Alignment(0, -1.1),
+                    alignment: Alignment(barrierXone, -1.1),
                     duration: Duration(milliseconds: 0),
                     child: MyBarrier(
                       size: 120.0,
                     ),
                   ),
                   AnimatedContainer(
-                    alignment: Alignment(1, 1.1),
+                    alignment: Alignment(barrierXtwo, 1.1),
                     duration: Duration(milliseconds: 0),
                     child: MyBarrier(
-                      size: 130.0,
+                      size: 90.0,
                     ),
                   ),
                   AnimatedContainer(
-                    alignment: Alignment(1, -1.1),
+                    alignment: Alignment(barrierXtwo, -1.1),
                     duration: Duration(milliseconds: 0),
                     child: MyBarrier(
-                      size: 150.0,
+                      size: 180.0,
                     ),
                   )
                 ],

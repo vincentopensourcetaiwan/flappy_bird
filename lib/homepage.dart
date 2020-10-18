@@ -71,8 +71,12 @@ class _HomePageState extends State<HomePage> {
                             style: TextStyle(fontSize: 20, color: Colors.white),
                           ),
                   ),
-                  MyBarrier(
-                    size: 200.0,
+                  AnimatedContainer(
+                    alignment: Alignment(0, -0.3),
+                    duration: Duration(milliseconds: 0),
+                    child: MyBarrier(
+                      size: 200.0,
+                    ),
                   )
                 ],
               )),

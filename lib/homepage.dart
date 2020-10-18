@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
           barrierXtwo -= 0.05;
         }
       });
-      if (birdYaxis > 1) {
+      if (birdYaxis > 1 || birdYaxis < -1) {
         timer.cancel();
         gameHasStarted = false;
       }

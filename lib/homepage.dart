@@ -31,6 +31,8 @@ class _HomePageState extends State<HomePage> {
       time += 0.04;
       height = -4.9 * time * time + 2.8 * time;
       setState(() {
+        barrierXone -= 0.01;
+        barrierXtwo -= 0.01;
         birdYaxis = initialHeight - height;
       });
       if (birdYaxis > 1) {
@@ -91,7 +93,7 @@ class _HomePageState extends State<HomePage> {
                     alignment: Alignment(barrierXtwo, 1.1),
                     duration: Duration(milliseconds: 0),
                     child: MyBarrier(
-                      size: 90.0,
+                      size: 70.0,
                     ),
                   ),
                   AnimatedContainer(

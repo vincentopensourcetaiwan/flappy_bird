@@ -34,15 +34,15 @@ class _HomePageState extends State<HomePage> {
         birdYaxis = initialHeight - height;
       });
       setState(() {
-        if (barrierXone < -1.1) {
-          barrierXone += 2.2;
+        if (barrierXone < -2) {
+          barrierXone += 3;
         } else {
           barrierXone -= 0.05;
         }
       });
       setState(() {
-        if (barrierXtwo < -1.1) {
-          barrierXtwo += 2.2;
+        if (barrierXtwo < -2) {
+          barrierXtwo += 3;
         } else {
           barrierXtwo -= 0.05;
         }
